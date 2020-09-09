@@ -8,12 +8,15 @@ import InputBase from '@material-ui/core/InputBase';
 import Badge from '@material-ui/core/Badge';
 import MenuItem from '@material-ui/core/MenuItem';
 import Menu from '@material-ui/core/Menu';
-import MenuIcon from '@material-ui/icons/Menu';
-import SearchIcon from '@material-ui/icons/Search';
+//import MenuIcon from '@material-ui/icons/Menu';
+//import SearchIcon from '@material-ui/icons/Search';
 import AccountCircle from '@material-ui/icons/AccountCircle';
 import MailIcon from '@material-ui/icons/Mail';
 import NotificationsIcon from '@material-ui/icons/Notifications';
 import MoreIcon from '@material-ui/icons/MoreVert';
+import AddIcon from '@material-ui/icons/Add';
+import { Link } from "react-router-dom";
+//import zIndex from '@material-ui/core/styles/zIndex';
 
 const useStyles = makeStyles((theme) => ({
     grow: {
@@ -44,7 +47,7 @@ const useStyles = makeStyles((theme) => ({
         },
     },
     searchIcon: {
-        padding: theme.spacing(0, 2),
+        padding: theme.spacing(0, 4),
         height: '100%',
         position: 'absolute',
         pointerEvents: 'none',
@@ -115,7 +118,9 @@ export default function PrimarySearchAppBar() {
             open={isMenuOpen}
             onClose={handleMenuClose}
         >
-            <MenuItem onClick={handleMenuClose}>Profile</MenuItem>
+            <Link to='/profile'>
+            <MenuItem style={{color:"black"}}onClick={handleMenuClose}>Profile</MenuItem>
+            </Link>
             <MenuItem onClick={handleMenuClose}>Logout</MenuItem>
         </Menu>
     );
@@ -131,6 +136,7 @@ export default function PrimarySearchAppBar() {
             open={isMobileMenuOpen}
             onClose={handleMobileMenuClose}
         >
+
             <MenuItem>
                 <IconButton aria-label="show 4 new mails" color="inherit">
                     <Badge badgeContent={4} color="secondary">
@@ -162,16 +168,16 @@ export default function PrimarySearchAppBar() {
     );
 
     return (
-        <div className={classes.grow}>
+        <div className={classes.grow } style={{position:"sticky",zIndex:"100", top:"0"}}>
             <AppBar position="static">
                 <Toolbar>
-                    
+
                     <Typography className={classes.title} variant="h4" noWrap>
                         Logo
           </Typography>
-                    <div className={classes.search}>
+                    <div className={classes.search} style={{ marginLeft: "100px" }}>
                         <div className={classes.searchIcon}>
-                            <SearchIcon />
+
                         </div>
                         <InputBase
                             placeholder="Search…"
@@ -184,13 +190,18 @@ export default function PrimarySearchAppBar() {
                     </div>
                     <div className={classes.grow} />
                     <div className={classes.sectionDesktop}>
-                        <IconButton aria-label="show 4 new mails" color="inherit">
-                            <Badge badgeContent={4} color="secondary">
+                        <IconButton color="inherit">
+                            <Badge color="secondary">
+                                <AddIcon />
+                            </Badge>
+                        </IconButton>
+                        <IconButton  color="inherit">
+                            <Badge  color="secondary">
                                 <MailIcon />
                             </Badge>
                         </IconButton>
-                        <IconButton aria-label="show 17 new notifications" color="inherit">
-                            <Badge badgeContent={17} color="secondary">
+                        <IconButton  color="inherit">
+                            <Badge  color="secondary">
                                 <NotificationsIcon />
                             </Badge>
                         </IconButton>

@@ -77,9 +77,10 @@ const QuationTable = () => {
             <td><input type="checkbox" /></td>
           </tr>
         </tbody>
+        <button className="btn btn-primary" style={{textAlign:"center"}} type="Submit">Submit</button>
       </table>
 
-      <button className="btn btn-primary" type="Submit">Submit</button>
+      
     </>
   )
 }

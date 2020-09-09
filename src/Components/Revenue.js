@@ -6,8 +6,7 @@ const Revenue = () => {
     return (
         <>
             <div style={{ marginLeft: "158px", contentAlign: "center", itemsAlign: "center", }}>
-                <h3>REVENUE</h3>
-                <hr />
+                
                 <div class="container">
                     <form action="">
                         <div class="row">
@@ -73,7 +72,7 @@ const Revenue = () => {
 
 
                         <div class="row">
-                            <input type="submit" value="Share By" />
+                            <input type="submit" value="Submit" />
                         </div>
                     </form>
                 </div>

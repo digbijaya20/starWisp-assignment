@@ -9,7 +9,7 @@
     left: 170px;
     bottom: 10px;
     width: 86%;
-    height: 1010px;
+    height:540px;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0),
       0 0 0 2px rgba(255, 255, 255, 255), 0.3em 0.3em 1em rgba(0, 0, 0, 0.3);
     background: #edb5bf;
@@ -26,7 +26,7 @@
     left: 10px;
     border-radius: 5px;
     top: 15px;
-    width: 300px;
+    width: 350px;
     height: 150px;
     border: 1px solid white;
     background: snow;
@@ -41,7 +41,7 @@
     position: relative;
     left: 390px;
     bottom: 135px;
-    width: 300px;
+    width: 330px;
     height: 150px;
     border: 1px solid white;
     background: snow;
@@ -56,7 +56,7 @@
     position: relative;
     left: 750px;
     bottom: 285px;
-    width: 300px;
+    width: 330px;
     height: 150px;
     border: 1px solid white;
     background: snow;
@@ -69,10 +69,10 @@
     font-family: "Courier New", Courier, monospace;
     border-radius: 5px;
     position: relative;
-    bottom:250px;
+    bottom:270px;
     left: 10px;
-    width: 1040px;
-    height: 200px;
+    width: 1070px;
+    height: 180px;
     border: 1px solid white;
     background: snow;
     box-shadow: inset 0 -3em 3em rgba(0, 0, 0, 0),
@@ -85,8 +85,8 @@
     border-radius: 5px;
     position: relative;
     left: 10px;
-    bottom:230px;
-    width: 300px;
+    bottom:255px;
+    width: 350px;
     height: 150px;
     border: 1px solid white;
     background: snow;
@@ -100,8 +100,8 @@
     border-radius: 5px;
     position: relative;
     left: 390px;
-    bottom:380px;
-    width: 300px;
+    bottom:405px;
+    width: 330px;
     height: 150px;
     border: 1px solid white;
     background: snow;
@@ -115,8 +115,8 @@
     border-radius: 5px;
     position: relative;
     left: 750px;
-    bottom:530px;
-    width: 300px;
+    bottom:555px;
+    width: 330px;
     height: 150px;
     border: 1px solid white;
     background: snow;
